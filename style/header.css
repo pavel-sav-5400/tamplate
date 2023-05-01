@@ -4,7 +4,7 @@
     position: relative;
     background-image: url("../img/header-background.jpg");
     background-size: cover;
-    background-position: 0 -80px;
+    background-position: 0 -90px;
     background-repeat: no-repeat;
     z-index: 1;
 }
@@ -61,6 +61,7 @@
     line-height: 31px;
     color: rgba(255, 255, 255, 0.75);
     margin-bottom: 90px;
+    padding: 0 100px;
 }
 
 .header__button {

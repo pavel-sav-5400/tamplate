@@ -1,0 +1,9 @@
+@import url("normalize.css");
+@import url("global.css");
+@import url("index.css");
+@import url("var.css");
+
+@import url("header.css");
+@import url("about.css");
+@import url("contact.css");
+@import url("footer.css");

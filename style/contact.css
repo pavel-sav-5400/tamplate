@@ -1,0 +1,147 @@
+.contact {
+    position: relative;
+    background-image: url("../img/contact-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -130px;
+    z-index: 1;
+    color: var(--main-color-light);
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(47, 50, 75, 0.85);
+    z-index: -1;
+}
+
+.contact__title {
+    color: var(--main-color-light);
+    margin-bottom: 17px;
+}
+
+.contact__text {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 50px;
+}
+
+.fieldset {
+    max-width: 423px;
+    border: none;
+    margin: 0 auto 50px;
+}
+
+.input {
+    width: 100%;
+    background: transparent;
+    margin-bottom: 21px;
+    padding: 9px 26px;
+    border: 1.38235px solid var(--main-color-light);
+    border-radius: 50px;
+    font-size: 22px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input:last-child {
+    margin-bottom: 0;
+}
+
+.contact__button {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    padding: 11px 38px;
+    margin-bottom: 50px;
+    background: #15A9CB;
+    box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
+    border: none;
+    border-radius: 50px;
+    color: var(--main-color-light);
+}
+
+.form__text {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.form__link {
+    color: #4A76A8;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+@media (max-width: 1024px) {
+    .contact {
+        background-position: 0 0;
+        padding-bottom: 56px;
+    }
+
+    .contact__title {
+        margin-bottom: 16px;
+    }
+
+    .contact__text {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .fieldset {
+        max-width: 379px;
+    }
+
+    .input {
+        padding: 7px 23px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .contact__button {
+        margin-bottom: 30px;
+    }
+
+    .form__text {
+        font-size: 17px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact {
+        padding: 30px 0;
+    }
+
+    .contact__text {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 35px;
+    }
+
+    .input {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 5px 18px;
+        margin-bottom: 15px;
+    }
+
+    .fieldset {
+        margin-bottom: 45px;
+    }
+
+    .contact__button {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 9px 31px;
+    }
+
+    .form__text {
+        font-size: 11px;
+        line-height: 13px;
+    }
+}

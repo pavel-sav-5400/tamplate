@@ -1,0 +1,152 @@
+.company {
+    color: var(--main-color-light);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 110px;
+    align-items: center;
+}
+
+.company:last-child {
+    margin-bottom: 0;
+}
+
+.company-block-wrap {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    max-width: 214px;
+}
+
+.company__copyright {
+    color: var(--main-color-light);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.company__made {
+    color: var(--main-color-light);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.company__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.contact__link {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.contact__link-callme {
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: underline rgba(255, 255, 255, 0.5);
+    text-underline-offset: 5px;
+}
+
+@media (max-width: 1024px) {
+    .company {
+        margin-bottom: 70px;
+    }
+
+    .company__logo {
+        width: 60px;
+        height: auto;
+    }
+
+    .contact__number {
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+    .contact__link-callme {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .company__contact {
+        gap: 4px;
+    }
+
+    .company__made {
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 640px) {
+    .company {
+        gap: 40px;
+    }
+
+    .contact__number,
+    .contact__link-callme {
+        display: none;
+    }
+
+    .contact__svg {
+        display: block;
+        width: 60px;
+        height: auto;
+    }
+
+    .company__made {
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .company__logo {
+        width: 45px;
+        height: auto;
+    }
+
+    .contact__svg {
+        width: 45px;
+        height: auto;
+    }
+
+    .company__copyright {
+        font-size: 10px;
+        line-height: 13px;
+        max-width: 110px;
+    }
+}
+
+@media (max-width: 320px),
+(max-width: 400px) {
+    .company {
+        margin-bottom: 65px;
+    }
+
+    .contact__number,
+    .contact__link-callme {
+        display: none;
+    }
+
+    .company__logo {
+        width: 30px;
+        height: auto;
+    }
+
+    .contact__svg {
+        display: block;
+        width: 25px;
+        height: auto;
+    }
+
+    .company__copyright {
+        font-size: 8px;
+        line-height: 11px;
+    }
+}

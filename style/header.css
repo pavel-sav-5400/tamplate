@@ -1,5 +1,8 @@
+.contact__svg {
+    display: none;
+}
+
 .header {
-    color: var(--main-color-light);
     padding: 40px 0 120px;
     position: relative;
     background-image: url("../img/header-background.jpg");
@@ -19,33 +22,6 @@
 
 .header__content {
     text-align: center;
-}
-
-.header__block {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 110px;
-    align-items: center;
-}
-
-.header__contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-}
-
-.header__phone {
-    font-size: 24px;
-    line-height: 28px;
-}
-
-.header__link {
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration: underline rgba(255, 255, 255, 0.5);
-    text-underline-offset: 5px;
 }
 
 .header__title {
@@ -82,29 +58,6 @@
         padding: 26px 0 70px;
     }
 
-    .header__block {
-        margin-bottom: 70px;
-    }
-
-    .header__logo {
-        width: 60px;
-        height: auto;
-    }
-
-    .header__phone {
-        font-size: 21px;
-        line-height: 25px;
-    }
-
-    .header__link {
-        font-size: 13px;
-        line-height: 15px;
-    }
-
-    .header__contact {
-        gap: 4px;
-    }
-
     .header__title {
         font-size: 40px;
         line-height: 47px;
@@ -120,52 +73,34 @@
 }
 
 @media (max-width: 768px) {
+    .header__title {
+        font-size: 35px;
+        line-height: 41px;
+    }
+
     .header__text {
+        font-size: 16px;
+        line-height: 23px;
         padding: 0 50px;
     }
 }
 
 @media (max-width: 640px) {
-    .header__contact {
-        display: none;
+    .header__title {
+        font-size: 29px;
+        line-height: 34px;
     }
 
-    .header__link-svg {
-        display: block;
-    }
-
-    .svg-phone {
-        width: 60px;
-        height: auto;
+    .header__text {
+        padding: 0 15px;
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 320px),
+(max-width: 480px) {
     .header {
         background-position: -60px 0;
         padding: 15px 0 65px;
-    }
-
-    .header__block {
-        margin-bottom: 65px;
-    }
-
-    .header__contact {
-        display: none;
-    }
-
-    .header__logo {
-        width: 30px;
-        height: auto;
-    }
-
-    .svg-phone {
-        width: 25px;
-        height: auto;
-    }
-
-    .header__link-svg {
-        display: block;
     }
 
     .header__title {
@@ -180,6 +115,7 @@
         max-height: 77px;
         overflow: hidden;
         margin-bottom: 54px;
+        padding: 0 5px;
     }
 
     .header__button {

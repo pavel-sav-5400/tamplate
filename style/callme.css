@@ -1,4 +1,4 @@
-.contact {
+.callme {
     position: relative;
     background-image: url("../img/contact-background.jpg");
     background-repeat: no-repeat;
@@ -8,7 +8,7 @@
     color: var(--main-color-light);
 }
 
-.contact::before {
+.callme::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -16,12 +16,12 @@
     z-index: -1;
 }
 
-.contact__title {
+.callme__title {
     color: var(--main-color-light);
     margin-bottom: 17px;
 }
 
-.contact__text {
+.callme__text {
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
@@ -51,7 +51,7 @@
     margin-bottom: 0;
 }
 
-.contact__button {
+.callme__button {
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
@@ -77,16 +77,16 @@
 }
 
 @media (max-width: 1024px) {
-    .contact {
+    .callme {
         background-position: 0 0;
         padding-bottom: 56px;
     }
 
-    .contact__title {
+    .callme__title {
         margin-bottom: 16px;
     }
 
-    .contact__text {
+    .callme__text {
         font-size: 20px;
         line-height: 23px;
     }
@@ -102,7 +102,7 @@
         line-height: 23px;
     }
 
-    .contact__button {
+    .callme__button {
         margin-bottom: 30px;
     }
 
@@ -112,12 +112,57 @@
     }
 }
 
-@media (max-width: 320px) {
-    .contact {
+@media (max-width: 768px) {
+    .callme__title {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .callme__text {
+        font-size: 17px;
+        line-height: 20px;
+        margin-bottom: 45px;
+    }
+
+    .callme {
+        padding: 55px 0;
+    }
+
+    .form__text {
+        font-size: 15px;
+        line-height: 17px;
+    }
+}
+
+@media (max-width:640px) {
+    .callme__title {
+        font-size: 23px;
+        line-height: 27px;
+    }
+
+    .callme__text {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 40px;
+    }
+
+    .callme {
+        padding: 40px 0;
+    }
+
+    .form__text {
+        font-size: 13px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 320px),
+(max-width: 480px) {
+    .callme {
         padding: 30px 0;
     }
 
-    .contact__text {
+    .callme__text {
         font-size: 12px;
         line-height: 14px;
         margin-bottom: 35px;
@@ -134,7 +179,7 @@
         margin-bottom: 45px;
     }
 
-    .contact__button {
+    .callme__button {
         font-size: 16px;
         line-height: 19px;
         padding: 9px 31px;

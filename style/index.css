@@ -18,15 +18,40 @@
     margin-bottom: 25px;
 }
 
-.header__link-svg {
-    display: none;
-}
-
 @media (max-width: 1024px) {
     .section__title {
         font-size: 32px;
         line-height: 38px;
         margin-bottom: 23px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section__title {
+        font-size: 27px;
+        line-height: 32px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .section__title {
+        font-size: 25px;
+        line-height: 29px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .section__title {
+        font-size: 22px;
+        line-height: 26px;
     }
 }
 

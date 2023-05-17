@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 110px;
+    margin-bottom: 118px;
     align-items: center;
 }
 
@@ -26,6 +26,7 @@
 }
 
 .company__made {
+    padding-right: 5px;
     color: var(--main-color-light);
     font-weight: 500;
     font-size: 12px;

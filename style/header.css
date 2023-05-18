@@ -7,7 +7,7 @@
     position: relative;
     background-image: url("../img/header-background.jpg");
     background-size: cover;
-    background-position: 0 -83px;
+    background-position: 100% 50%;
     background-repeat: no-repeat;
     z-index: 1;
 }
@@ -40,6 +40,10 @@
     padding: 0 100px;
 }
 
+.header__text-point {
+    display: none;
+}
+
 .header__button {
     display: inline-block;
     padding: 12px 48px;
@@ -54,21 +58,25 @@
 
 @media (max-width: 1024px) {
     .header {
-        background-position: 0 -20px;
         padding: 26px 0 70px;
     }
 
     .header__title {
+        padding: 0 10px;
         font-size: 40px;
         line-height: 47px;
-        margin-bottom: 27px;
+        margin-bottom: 28px;
     }
 
     .header__text {
         font-size: 18px;
         line-height: 25px;
-        margin-bottom: 60px;
+        margin-bottom: 58px;
         padding: 0 105px;
+    }
+
+    .header__button {
+        padding: 12px 49px;
     }
 }
 
@@ -99,23 +107,29 @@
 @media (max-width: 320px),
 (max-width: 480px) {
     .header {
-        background-position: -60px 0;
-        padding: 15px 0 65px;
+        background-position: 13% 100%;
+        padding: 15px 0 66px;
     }
 
     .header__title {
         font-size: 20px;
         line-height: 23px;
-        margin-bottom: 23px;
+        margin-bottom: 26px;
     }
 
     .header__text {
         font-size: 14px;
         line-height: 20px;
-        max-height: 77px;
-        overflow: hidden;
-        margin-bottom: 54px;
+        margin-bottom: 52px;
         padding: 0 5px;
+    }
+
+    .header__text-hidden {
+        display: none;
+    }
+
+    .header__text-point {
+        display: inline;
     }
 
     .header__button {

@@ -3,7 +3,7 @@
     background-image: url("../img/contact-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 -140px;
+    background-position: 100% 50%;
     z-index: 1;
     color: var(--main-color-light);
     padding: 70px 0 68px;
@@ -80,28 +80,35 @@
 
 @media (max-width: 1024px) {
     .callme {
-        background-position: 0 0;
         padding-bottom: 56px;
     }
 
     .callme__title {
         margin-bottom: 16px;
+        padding-right: 9px;
     }
 
     .callme__text {
         font-size: 20px;
         line-height: 23px;
+        padding-left: 17px;
+        margin-bottom: 47px;
     }
 
     .fieldset {
-        max-width: 379px;
+        max-width: 380px;
     }
 
     .input {
-        padding: 7px 23px;
-        margin-bottom: 20px;
+        padding: 7px 21px;
+        margin-bottom: 18px;
         font-size: 20px;
         line-height: 23px;
+        border: 2px solid var(--main-color-light);
+    }
+
+    .input:last-child {
+        padding-left: 20px;
     }
 
     .callme__button {
@@ -161,34 +168,54 @@
 @media (max-width: 320px),
 (max-width: 480px) {
     .callme {
-        padding: 30px 0;
+        padding: 31px 0 29px;
+    }
+
+    .callme__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        padding-left: 7px;
+        margin-bottom: 12px;
     }
 
     .callme__text {
         font-size: 12px;
         line-height: 14px;
         margin-bottom: 35px;
+        padding: 0;
     }
 
     .input {
         font-size: 14px;
         line-height: 16px;
-        padding: 5px 18px;
-        margin-bottom: 15px;
+        padding: 6px 18px;
+        margin-bottom: 13px;
+        border: 1px solid var(--main-color-light);
+    }
+
+    .input:last-child {
+        padding-left: 16px;
     }
 
     .fieldset {
-        margin-bottom: 45px;
+        margin-bottom: 44px;
+        max-width: 292px;
     }
 
     .callme__button {
         font-size: 16px;
         line-height: 19px;
-        padding: 9px 31px;
+        padding: 9px 29px;
+        margin-bottom: 31px;
     }
 
     .form__text {
         font-size: 11px;
         line-height: 13px;
+    }
+
+    .form__link {
+        text-underline-offset: 3px;
     }
 }

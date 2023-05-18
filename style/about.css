@@ -82,7 +82,20 @@
     .about__subtitle {
         font-size: 20px;
         line-height: 23px;
-        margin-bottom: 33px;
+        margin-bottom: 30px;
+        padding-right: 3px;
+    }
+
+    .about__subtitle::before {
+        top: 10px;
+        right: 75px;
+        width: 40px;
+    }
+
+    .about__subtitle::after {
+        top: 10px;
+        left: 73px;
+        width: 40px;
     }
 
     .about__text {
@@ -91,16 +104,24 @@
         padding: 0 150px;
     }
 
+    .about__list {
+        gap:  35px;
+    }
+
     .about__item {
         gap: 26px;
         font-size: 18px;
         line-height: 25px;
+        padding-right: 2px;
     }
 
     .about__item::before {
         width: 104px;
         height: 104px;
         padding: 22px 31px;
+        font-weight: 500;
+        font-size: 52px;
+        line-height: 61px;
     }
 }
 
@@ -128,23 +149,41 @@
 @media (max-width: 320px),
 (max-width: 480px) {
     .about {
-        padding: 30px 0 60px;
+        padding: 31px 0 63px;
+    }
+
+    .about__title {
+        margin-bottom: 17px;
     }
 
     .about__subtitle {
         font-size: 16px;
         line-height: 19px;
-        margin-bottom: 26px;
+        margin-bottom: 29px;
+    }
+
+    .about__subtitle::before {
+        top: 11px;
+        right: 69px;
+        width: 20px;
+        height: 1px;
+    }
+
+    .about__subtitle::after {
+        top: 11px;
+        left: 69px;
+        width: 20px;
+        height: 1px;
     }
 
     .about__text {
         font-size: 12px;
         line-height: 17px;
-        padding: 0 10px;
+        padding: 0 9px;
         margin-bottom: 40px;
     }
 
     .about__list {
-        gap: 40px;
+        gap: 42px;
     }
 }

@@ -71,9 +71,11 @@
     .contact__link-callme {
         font-size: 13px;
         line-height: 15px;
+        text-underline-offset: 6px;
     }
 
     .company__contact {
+        padding: 0 2px 6px 0;
         gap: 4px;
     }
 
@@ -127,7 +129,7 @@
 @media (max-width: 320px),
 (max-width: 400px) {
     .company {
-        margin-bottom: 65px;
+        margin-bottom: 66px;
     }
 
     .contact__number,
@@ -140,14 +142,19 @@
         height: auto;
     }
 
+    .company__contact {
+        padding: 0;
+    }
+
     .contact__svg {
         display: block;
-        width: 25px;
+        width: 24px;
         height: auto;
     }
 
     .company__copyright {
         font-size: 8px;
         line-height: 11px;
+        max-width: 90px;
     }
 }
